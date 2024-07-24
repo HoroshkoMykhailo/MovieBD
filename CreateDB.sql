@@ -88,7 +88,7 @@ CREATE TABLE MovieCharacters (
     movie_id INTEGER NOT NULL,
     character_id INTEGER NOT NULL,
     actor_id INTEGER,
-    PRIMARY KEY (movie_id, character_id),
+    PRIMARY KEY (movie_id, character_id, actor_id),
     FOREIGN KEY (movie_id) REFERENCES Movies(id),
     FOREIGN KEY (character_id) REFERENCES Characters(id),
     FOREIGN KEY (actor_id) REFERENCES Person(id)
