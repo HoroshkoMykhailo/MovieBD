@@ -54,7 +54,7 @@
 
     MOVIE_CHARACTERS {
         int id PK
-        int movie_id PFK
+        int movie_id FK
         int character_id FK
         int actor_id FK
     }
