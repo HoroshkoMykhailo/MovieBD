@@ -53,8 +53,9 @@
     }
 
     MOVIE_CHARACTERS {
-        int movie_id PK, FK
-        int character_id PK, FK
+        int id PK
+        int movie_id PFK
+        int character_id FK
         int actor_id FK
     }
 
